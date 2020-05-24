@@ -1,0 +1,86 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+#container {
+    height: 100%;
+    width: 80%;
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+.grid-item {
+    border: 1px solid #ddd;
+    background-color: rgba(0, 0, 0, 0);
+}
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    background-color: cadetblue;
+    float: left;
+    height: 100%;
+}
+#button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    background-color: cadetblue;
+}
+button {
+    width: 80%;
+    height: 60px;
+    margin: 3px;
+    border-radius: 3px;
+    background-color: rgb(107, 179, 182);
+    border: 2px solid white;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+}
+button:hover {
+    background-color: rgb(134, 202, 204);
+    color: black;
+}
+label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 3px;
+    color: white;
+}
+#bgcolor, #cellColor {
+    width: 80%;
+    height: 60px;
+    border: 0px solid white;
+    border-radius: 3px;
+    margin: 3px;
+}
+
+#logo {
+    position: absolute;
+    display: block;
+    top: 10px;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+}
+#cell:hover {
+    background-color: black;
+} 
