@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Etch a Scetch</title>
+</head>
+<body>
+<div id="sidebar">
+    <div id="logo">
+        <div>Etch a Scetch</div>
+    </div>
+    <div id="button-container">
+        <button onclick="makeRows(16,16)" id="load-gris">Load Grid</button>
+        <button onclick="clearGrid()" id="grid-clear">Clear Grid</button>
+        <button onclick="getGridSize()" id="grid-size">Grid Size</button>
+        <label for="bgcolor">Background Color</label>
+        <input onchange="backgroundColor()" type="color" id="bgcolor" name="bgcolor" value="#FFFFFF">
+        <label for="cell-color">Pixel Color</label>
+        <input onchange="pixelColor()" type="color" id="cellColor" name="cellColor" value="#FFFFFF">
+        <button id="cell-eraser">Pixel Eraser</button>
+    </div>
+</div>
+
+<div id="main">
+<div id="container"></div> 
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
