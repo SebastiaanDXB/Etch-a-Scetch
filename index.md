@@ -17,9 +17,11 @@
         <button onclick="getGridSize()" id="grid-size">Grid Size</button>
         <label for="bgcolor">Background Color</label>
         <input onchange="backgroundColor()" type="color" id="bgcolor" name="bgcolor" value="#FFFFFF">
+<!-- not functional yet
         <label for="cell-color">Pixel Color</label>
         <input onchange="pixelColor()" type="color" id="cellColor" name="cellColor" value="#FFFFFF">
         <button id="cell-eraser">Pixel Eraser</button>
+    --->  
     </div>
 </div>
 
