@@ -59,12 +59,12 @@ function makeRows(rows, cols) {
 
 }
 };
-
+makeRows(16, 16);
 main.appendChild(container);
  
 darken(cell);
 
 // pixelColor();
 
-makeRows(16, 16);
+
 
